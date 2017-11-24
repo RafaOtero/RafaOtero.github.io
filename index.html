@@ -26,15 +26,15 @@
     <div class="bg-color">
       <header id="header">
         <div class="container">
-          <!-- <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#about">About</a>
-            <a href="#event">Event</a>
+          <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#map">Mapa</a>
+            <!-- <a href="#event">Event</a> -->
             <a href="#menu-list">Menu</a>
-            <a href="#contact">Book a table</a>
+            <a href="#contact">Contacto</a>
           </div> -->
           <!-- Use any element to open the sidenav -->
-          <!-- <span onclick="openNav()" class="pull-right menu-icon">☰</span> -->
+          <span id="openBtn" onclick="openNav()" class="pull-right menu-icon">☰</span>
         </div>
       </header>
       <div class="container">
@@ -55,15 +55,15 @@
 
 
 
-<section id="about" class="section-padding">
+<section id="map" class="section-padding">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 col-md-offset-2">
+        <div class="map-responsive">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4914.906882378157!2d-8.546579935201331!3d42.90615885708916!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efeede74e2419%3A0xedca3ff62d811232!2sParrillada+Mallo!5e0!3m2!1sen!2ses!4v1511518349669" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
-  </section>
+</section>
 
 
   <!--about-->
@@ -99,9 +99,9 @@
       </div>
     </div>
   </section>
-  <!--/about-->
-  <!-- event -->
-  <!-- <section id="event">
+
+   event
+  <section id="event">
     <div class="bg-color" class="section-padding">
       <div class="container">
         <div class="row">
@@ -136,23 +136,24 @@
   </section> -->
   <!--/ event -->
   <!-- menu -->
-  <!-- <section id="menu-list" class="section-padding">
+  <section id="menu-list" class="section-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center marb-35">
-          <h1 class="header-h">Menu List</h1>
-          <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-            <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
+          <h1 class="header-h">Menú</h1>
+          <p class="header-p">Estamos actualizando los menús
+            <br>En unos días estáran disponibles para su consulta</p>
         </div>
         <div class="col-md-12  text-center gallery-trigger">
           <ul>
-            <li><a class="filter" data-filter="all">Show All</a></li>
-            <li><a class="filter" data-filter=".category-1">Breakfast</a></li>
-            <li><a class="filter" data-filter=".category-2">Lunch</a></li>
-            <li><a class="filter" data-filter=".category-3">Dinner</a></li>
+            <li><a class="filter" data-filter="all">Entrantes</a></li>
+            <li><a class="filter" data-filter=".category-1">Segundos</a></li>
+            <li><a class="filter" data-filter=".category-2">Postres</a></li>
+            <li><a class="filter" data-filter=".category-3">Menus especiales</a></li>
+            <li><a class="filter" data-filter=".category-4">Novedades</a></li>
           </ul>
         </div>
-        <div id="Container">
+        <!-- <div id="Container">
           <div class="mix category-1 menu-restaurant" data-myorder="2">
             <span class="clearfix">
                         <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
@@ -249,10 +250,10 @@
             </span>
             <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
-  </section> -->
+  </section>
   <!--/ menu -->
   <!-- contact -->
   <section id="contact" class="section-padding">
@@ -265,9 +266,9 @@
           </p>
         </div> -->
       </div>
-      <div class="row msg-row">
-        <!-- <div class="col-md-4 col-sm-4 mr-15"> -->
-        <div class="mr-15">
+
+        <div class="col-md-12 col-sm-4 mr-15">
+        <div class="col-md-6">
           <div class="media-2">
             <div class="media-left">
               <div class="contact-phone bg-1 text-center"><span class="phone-in-talk fa fa-phone"></span></div>
@@ -278,19 +279,10 @@
                 <!-- <span class="contacts-sp">Phone Booking</span> -->
               </p>
             </div>
-            <div class="media-left">
-              <div class="contact-email bg-14 text-center"><span class="hour-icon fa fa-clock-o"></span></div>
-            </div>
-            <div class="media-body">
-              <h4 class="dark-blue regular">Horario</h4>
-              <p class="light-blue regular alt-p"> Martes a Domingo de 11:00 - 24:00</p>
-              <p class="light-blue regular alt-p">
-                Lunes cerrado
-              </p>
-            </div>
-
           </div>
-          <!-- <div class="media-2">
+        </div>
+        <div class="col-md-6">
+          <div class="media-2">
             <div class="media-left">
               <div class="contact-email bg-14 text-center"><span class="hour-icon fa fa-clock-o"></span></div>
             </div>
@@ -301,8 +293,8 @@
                 Lunes cerrado
               </p>
             </div>
-          </div> -->
-        </div>
+          </div>
+
         <!-- <div class="col-md-8 col-sm-8">
           <form action="" method="post" role="form" class="contactForm">
             <div id="sendmessage">Your booking request has been sent. Thank you!</div>
@@ -360,7 +352,7 @@
         </div> -->
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- / contact -->
   <!-- footer -->
   <footer class="footer text-center">

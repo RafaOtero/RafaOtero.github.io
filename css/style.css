@@ -12,7 +12,7 @@ body {
     font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -64,7 +64,7 @@ table {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.5);
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -473,4 +473,24 @@ table {
     }
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.center {
+	align : center;
+
 }
